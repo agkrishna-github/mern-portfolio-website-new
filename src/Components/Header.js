@@ -110,7 +110,7 @@ const Header = () => {
               <h3 className="animate-charcter md:p-3 md:text-3xl p-5">
                 {item?.title}
               </h3>
-              <h3 className="text-5xl p-5 md:p-3 md:text-2xl text-[#47ffe0] md:h-[130px] md:leading-relaxed md:mb-14 ">
+              <h3 className="text-5xl p-5 md:p-3 md:text-2xl text-[#47ffe0] md:h-[130px] md:whitespace-nowrap md:mb-14 ">
                 <Typewriter
                   options={{
                     strings: ["React Developer", "Mern Stack Developer"],

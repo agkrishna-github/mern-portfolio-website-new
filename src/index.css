@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    scroll-behavior: smooth;
 }
+
+
+body,
+input {
+    font-family: 'Sono', sans-serif;
+}
+
+
+.border-black-all {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-radial {
+    border-top: 3px solid rgba(255, 215, 0,0.8);
+    border-right: 3px solid rgba(255, 215, 0,0.6);
+    border-bottom: 3px solid rgba(255, 215, 0,0.4);
+    border-left: 3px solid rgba(255, 215,0, 0.2);
+    transition: all 0.5s ease-in;
+}
+
+.contact-box:hover {
+    border: 3px solid rgb(255, 215, 0);
+    box-shadow: 2px 2px 12px 5px #fff;
+    cursor: pointer;
+   
+} 
+
+.active {
+    background-color: #1E3A8A !important;
+}
+
+
+
+.contact-input:focus {
+    
+        outline-style: solid;
+        outline-color: #ffd700;
+        outline-width: 4px;
+        outline-offset: -4px;
+    box-shadow: 2px 2px 12px 3px #fff;
+}
+
+.project-border {
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.project-cat {
+   
+    border: 2px solid #ffd700;
+   
+    
+}
+
+.project-cat-active {
+    outline-style: solid;
+    outline-color: #ffd700;
+    outline-width: 4px;
+    outline-offset: -4px;
+    box-shadow: 2px 2px 12px 3px #fff;
+   
+    
+}
+
+.header-tabs-border {
+    border:2px solid #fff !important
+}
+
+.vertical-timeline-element-date {
+    color: #fff;
+}
+
+.rotateDiv {
+    animation-name: rotateDivs;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            /* #f0d676 0%, */
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 60px;
+}
+ 
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+} 
+ 
+@keyframes rotateDivs {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+} 

@@ -25,13 +25,15 @@ const Projects = () => {
   ];
   return (
     <section
-      className="bg-gradient-to-r pt-12 from-[#263b9b] to-[#E0C3FC] text-white md:w-screen flex flex-col justify-center items-center"
+      className="bg-gradient-to-r pt-12 md:pt-5 from-[#263b9b] to-[#E0C3FC] text-white md:w-screen flex flex-col justify-center items-center"
       id="projects"
     >
-      <h2 className="p-5 w-[85%] text-3xl md:p-2 text-[#FEE715FF]">Projects</h2>
+      <h2 className="p-5 w-[85%] text-3xl md:p-2 text-[#FEE715FF] md:mb-3">
+        Projects
+      </h2>
 
       <div className=" w-[85%] min-h-[600px]  grid grid-cols-[20%_80%] gap-2 md:grid-cols-1">
-        <div className="p-5 md:px-0 md:py-5 flex flex-col md:flex-row min-h-full items-center gap-10 pt-12 project-border md:border-none">
+        <div className="p-5 md:px-0 md:mb-5 md:py-3 flex flex-col min-h-full items-center gap-10 md:gap-5 pt-12 project-border md:border-none">
           {allCategories &&
             allCategories?.map((cat, i) => (
               <Category
@@ -42,7 +44,7 @@ const Projects = () => {
               />
             ))}
         </div>
-        <div className="flex gap-5 flex-wrap  md:w-full items-start p-5 md:p-0  md:mb-10 project-border md:border-none">
+        <div className="flex gap-5 flex-wrap md:justify-center md:items-center items-start p-5 md:p-0  md:mb-10 project-border md:border-none">
           {categoryState &&
             categoryState?.map((project) => (
               <ProjectsComp project={project} key={project?._id} />

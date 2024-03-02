@@ -18,14 +18,14 @@ const Technologies = () => {
       className="h-screen md:h-auto  md:w-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
       id="technologies"
     >
-      <h3 className="px-2 py-5 w-[85%] mx-auto  md:w-[80%] md:mx-0 md:mt-16 text-3xl text-[#FEE715FF]">
+      <h3 className="px-2 py-5 md:pt-0 w-[85%] mx-auto   md:mt-16 text-3xl text-[#FEE715FF]">
         Technologies
       </h3>
-      <div className="w-[85%] min-h-[80%] md:w-[80%] md:mb-10 p-2 shadow-lg shadow-black rounded">
-        <p className="px-3 py-5 md:px-0 text-white text-xl font-bold md:leading-10">
+      <div className="w-[85%] min-h-[80%] md:w-[90%] md:mb-10 p-2 shadow-lg shadow-black rounded">
+        <p className="px-3 py-5 md:p-2 text-white text-xl md:text-lg font-bold md:leading-10">
           Here are Techlogies and Frameworks I have been working on
         </p>
-        <div className="grid w-[85%] mx-auto py-5 grid-cols-2 justify-center items-center gap-10 mb-10">
+        <div className="grid w-[85%] md:w-full mx-auto py-5 md:px-2 grid-cols-2 md:grid-cols-1 justify-center items-center gap-10 md:gap-3 mb-10 md:mb-5">
           {technologiesState &&
             technologiesState?.map((technology) => (
               <div

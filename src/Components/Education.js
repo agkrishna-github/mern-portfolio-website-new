@@ -9,13 +9,13 @@ import { SiReact } from "react-icons/si";
 const Education = () => {
   return (
     <section
-      className="w-screen flex flex-col gap-y-2 justify-center items-center md:w-screen bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
+      className="w-screen flex flex-col gap-y-2 md:gap-0 justify-center items-center md:w-screen bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
       id="education"
     >
-      <h2 className="w-[85%] text-[#FEE715FF] mt-10 pt-12 text-3xl">
+      <h2 className="w-[85%] text-[#FEE715FF] mt-10 pt-12 md:p-2 text-3xl">
         Education
       </h2>
-      <div className="w-[85%] mb-[80px] text-white p-5">
+      <div className="w-[85%] mb-[80px] md:mb-7 text-white p-5">
         <VerticalTimeline lineColor="#fff">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

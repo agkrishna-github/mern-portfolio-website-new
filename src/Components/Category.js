@@ -5,8 +5,8 @@ const Category = ({ category, setCategory, cat }) => {
     <div
       className={
         cat === category
-          ? "project-cat rounded-lg p-3 w-[150px] text-center cursor-pointer project-cat-active font-semibold"
-          : "project-cat rounded-lg p-3 w-[150px] text-center cursor-pointer hover:bg-blue-900 font-semibold"
+          ? "project-cat rounded-lg p-3 w-[150px] md:w-[200px] text-center cursor-pointer project-cat-active font-semibold"
+          : "project-cat rounded-lg p-3 w-[150px] md:w-[200px] text-center cursor-pointer hover:bg-blue-900 font-semibold"
       }
       onClick={() => setCategory(cat)}
     >

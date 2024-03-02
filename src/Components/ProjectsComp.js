@@ -3,7 +3,7 @@ import React from "react";
 const ProjectsComp = ({ project }) => {
   return (
     <div
-      className="flex flex-col gap-5 p-5 w-[300px] md:w-[270px] min-h-[250px] md:h-[200px] bg-[#422057FF] rounded-lg"
+      className="flex flex-col gap-5 p-5 w-[300px] min-h-[250px] md:min-h-[200px] bg-[#422057FF] rounded-lg"
       key={project?._id}
     >
       <p className=" p-5 h-[150px] bg-slate-200 text-lime-950 leading-8 rounded-lg font-semibold text-xl">

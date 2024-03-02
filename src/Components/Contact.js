@@ -38,9 +38,9 @@ const Contact = () => {
         <div className="w-full">
           <h2 className="py-2 my-5 text-3xl text-[#FEE715FF]">Contact Me</h2>
         </div>
-        <div className="flex w-5/6 mx-auto justify-around gap-10 md:flex-col md:gap-5">
+        <div className="flex w-5/6 md:w-full mx-auto justify-around gap-10 md:flex-col md:gap-5">
           <div className="my-5 flex flex-col gap-5">
-            <div className="p-5 w-full md:w-[70%] md:mx-auto flex flex-col gap-y-4  text-center border-radial contact-box rounded-lg">
+            <div className="p-5 w-full md:w-full md:mx-auto flex flex-col gap-y-4  text-center border-radial contact-box rounded-lg">
               <div>
                 <IoCallOutline className="text-2xl text-orange-400" />
               </div>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="p-5 w-full md:w-[70%] md:mx-auto flex flex-col gap-y-4  text-center border-radial contact-box rounded-lg">
+            <div className="p-5 w-full md:w-full md:mx-auto flex flex-col gap-y-4  text-center border-radial contact-box rounded-lg">
               <div>
                 <BsWhatsapp className="text-2xl text-orange-400" />
               </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            <div className="p-5 w-full md:w-[70%] md:mx-auto flex flex-col gap-y-4  text-center border-radial contact-box rounded-lg">
+            <div className="p-5 w-full md:w-full md:mx-auto flex flex-col gap-y-4  text-center border-radial contact-box rounded-lg">
               <div>
                 <MdOutlineEmail className="text-2xl text-orange-400" />
               </div>
@@ -84,34 +84,10 @@ const Contact = () => {
                   target="_blank"
                   className="text-white hover:text-orange-400"
                 >
-                  Send a Mail
+                  Send an e-mail
                 </a>
               </div>
             </div>
-            {/*   <div>
-              <ul className="ps-0">
-                <li className="mb-3 d-flex gap-15 align-items-center">
-                  <AiOutlineHome className="fs-5" />
-                  <address className="mb-0">
-                    Hno:100 Hyderabad, Telangana
-                  </address>
-                </li>
-                <li className="mb-3 d-flex gap-15 align-items-center">
-                  <BiPhoneCall className="fs-5" />
-                  <a href="tel:+91 9999999999">+91 9999999999</a>
-                </li>
-                <li className="mb-3 d-flex gap-15 align-items-center">
-                  <AiOutlineMail className="fs-5" />
-                  <a href="mailto: gopalakrishna.ad@gmail.com">
-                    gopalakrishna.ad@gmail.com
-                  </a>
-                </li>
-                <li className="mb-3 d-flex gap-15 align-items-center">
-                  <BiInfoCircle className="fs-5" />
-                  <p className="mb-0">Monday - Friday 10 AM - 8 PM</p>
-                </li>
-              </ul>
-            </div> */}
           </div>
           <div className="flex justify-center items-center">
             <form className="flex flex-col gap-5" onSubmit={submitHandler}>
@@ -120,7 +96,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 className="p-4 w-full rounded-lg contact-input"
-                placeholder="Enter Name"
+                placeholder="Enter Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -130,7 +106,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 className="p-4 w-full rounded-lg contact-input"
-                placeholder="Enater Email"
+                placeholder="Enater Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -140,7 +116,7 @@ const Contact = () => {
                 type="tel"
                 id="mobile"
                 className="p-4 w-full rounded-lg contact-input"
-                placeholder="Enter Mobile Number"
+                placeholder="Enter Your Mobile Number"
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
               />
@@ -151,7 +127,7 @@ const Contact = () => {
                 className="p-4 w-full rounded-lg  outline-orange-400 border-0 contact-input"
                 cols="40"
                 rows="5"
-                placeholder="Message"
+                placeholder="Enter Message"
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
               />
@@ -167,30 +143,6 @@ const Contact = () => {
         </div>
       </div>
     </section>
-
-    /* 
-  <div className="contact">
-      
-      <div className="contact-main">
-        <div className="contact-div1">
-          
-          
-          
-        </div>
-        <div className="contact-div2">
-          <form action="">
-            <input type="text" placeholder="Your Full Name" />
-            <input type="email" placeholder="Your Email" />
-            <textarea
-              cols="30"
-              rows="10"
-              placeholder="Write a Message"
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div> */
   );
 };
 

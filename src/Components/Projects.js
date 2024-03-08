@@ -7,7 +7,7 @@ import ProjectsComp from "./ProjectsComp";
 const Projects = () => {
   const dispatch = useDispatch();
 
-  const [category, setCategory] = useState("mern");
+  const [category, setCategory] = useState("Mern");
 
   useEffect(() => {
     dispatch(getAllProjects());

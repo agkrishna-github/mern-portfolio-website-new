@@ -45,7 +45,7 @@ const Contact = () => {
                 <IoCallOutline className="text-2xl text-orange-400" />
               </div>
               <h4>Call</h4>
-              <p>+91 8008262699</p>
+              <p>+91 9392753640</p>
               <div className="send-message">
                 <a
                   href="tel:+91 8008262699"

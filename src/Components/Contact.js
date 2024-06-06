@@ -61,10 +61,10 @@ const Contact = () => {
                 <BsWhatsapp className="text-2xl text-orange-400" />
               </div>
               <h4>Whatsapp</h4>
-              <p>+91 8008262699</p>
+              <p>+91 9392753640</p>
               <div className="send-message">
                 <a
-                  href="https://wa.me/+918008262699"
+                  href="https://wa.me/+919392753640"
                   target="_blank"
                   className="text-white hover:text-orange-400"
                 >
@@ -77,10 +77,10 @@ const Contact = () => {
                 <MdOutlineEmail className="text-2xl text-orange-400" />
               </div>
               <h4>Email</h4>
-              <p>gopalakrishna.ad@gmail.com</p>
+              <p>gopalakrishna4005@gmail.com</p>
               <div className="">
                 <a
-                  href="mailto:gopalakrishna.ad@gmail.com"
+                  href="mailto:gopalakrishna4005@gmail.com"
                   target="_blank"
                   className="text-white hover:text-orange-400"
                 >

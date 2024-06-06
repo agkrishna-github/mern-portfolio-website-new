@@ -48,7 +48,7 @@ const Contact = () => {
               <p>+91 9392753640</p>
               <div className="send-message">
                 <a
-                  href="tel:+91 8008262699"
+                  href="tel:+91 9392753640"
                   target="_blank"
                   className="text-white hover:text-orange-400 no-underline"
                 >

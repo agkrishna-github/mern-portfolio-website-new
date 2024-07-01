@@ -15,7 +15,6 @@ export const getAllProjects = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.get(`${base_url}project/`);
-      console.log(response?.data);
       return response?.data;
     } catch (error) {
       thunkAPI.rejectWithValue(error);

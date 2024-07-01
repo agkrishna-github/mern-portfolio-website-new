@@ -8,7 +8,7 @@ const Technologies = () => {
 
   useEffect(() => {
     dispatch(getAllTechnologies());
-  }, []);
+  }, [dispatch]);
 
   const technologiesState = useSelector(
     (state) => state?.technology?.technologies

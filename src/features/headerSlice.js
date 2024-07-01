@@ -17,7 +17,6 @@ export const getHeaderDetails = createAsyncThunk(
       const response = await axios.get(
         `${base_url}headerDetails/getheaderdetails`
       );
-      console.log(response?.data);
       return response?.data;
     } catch (error) {
       thunkAPI.rejectWithValue(error);

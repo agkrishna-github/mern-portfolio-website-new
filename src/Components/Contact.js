@@ -45,10 +45,10 @@ const Contact = () => {
                 <IoCallOutline className="text-2xl text-orange-400" />
               </div>
               <h4>Call</h4>
-              <p>+91 9392753640</p>
+              <p>+91 7780294561</p>
               <div className="send-message">
                 <a
-                  href="tel:+91 9392753640"
+                  href="tel:+91 7780294561"
                   target="_blank"
                   className="text-white hover:text-orange-400 no-underline"
                 >
@@ -61,10 +61,10 @@ const Contact = () => {
                 <BsWhatsapp className="text-2xl text-orange-400" />
               </div>
               <h4>Whatsapp</h4>
-              <p>+91 9392753640</p>
+              <p>+91 7780294561</p>
               <div className="send-message">
                 <a
-                  href="https://wa.me/+919392753640"
+                  href="https://wa.me/+917780294561"
                   target="_blank"
                   className="text-white hover:text-orange-400"
                 >
@@ -77,10 +77,10 @@ const Contact = () => {
                 <MdOutlineEmail className="text-2xl text-orange-400" />
               </div>
               <h4>Email</h4>
-              <p>gopalakrishna4005@gmail.com</p>
+              <p>gkgsgkgs4005@gmail.com</p>
               <div className="">
                 <a
-                  href="mailto:gopalakrishna4005@gmail.com"
+                  href="mailto:gkgsgkgs4005@gmail.com"
                   target="_blank"
                   className="text-white hover:text-orange-400"
                 >

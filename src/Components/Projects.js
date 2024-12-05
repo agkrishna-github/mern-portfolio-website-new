@@ -25,9 +25,13 @@ const Projects = () => {
   ];
   return (
     <section
-      className="bg-gradient-to-r pt-12 md:pt-5 from-[#263b9b] to-[#E0C3FC] text-white md:w-screen flex flex-col justify-center items-center"
+      className="bg-gradient-to-r pt-12 md:pt-5 from-[#263b9b] to-[#E0C3FC] text-white flex flex-col justify-center items-center"
       id="projects"
     >
+      {/* <section
+      className="bg-gradient-to-r pt-12 md:pt-5 from-[#263b9b] to-[#E0C3FC] text-white md:w-screen flex flex-col justify-center items-center"
+      id="projects"
+    > */}
       <h2 className="p-5 w-[85%] text-3xl md:p-2 text-[#FEE715FF] md:mb-3">
         Projects
       </h2>

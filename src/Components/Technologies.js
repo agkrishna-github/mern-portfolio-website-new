@@ -20,9 +20,13 @@ const Technologies = () => {
         <Loader />
       ) : (
         <section
-          className="h-screen md:h-auto  md:w-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
+          className="h-screen md:h-auto flex flex-col justify-center items-center bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
           id="technologies"
         >
+          {/* <section
+          className="h-screen md:h-auto  md:w-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
+          id="technologies"
+        > */}
           <h3 className="px-2 py-5 md:pt-0 w-[85%] mx-auto   md:mt-16 text-3xl text-[#FEE715FF]">
             Technologies
           </h3>

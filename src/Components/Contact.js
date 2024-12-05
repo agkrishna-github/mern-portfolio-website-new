@@ -31,9 +31,13 @@ const Contact = () => {
 
   return (
     <section
-      className="bg-gradient-to-r from-[#0d1121] to-[#5b288a] md:w-screen min-h-screen  py-2  flex justify-center items-center"
+      className="bg-gradient-to-r from-[#0d1121] to-[#5b288a]  min-h-screen  py-2  flex justify-center items-center md:w-full"
       id="contact"
     >
+      {/* <section
+      className="bg-gradient-to-r from-[#0d1121] to-[#5b288a] md:w-screen min-h-screen  py-2  flex justify-center items-center"
+      id="contact"
+    > */}
       <div className="w-5/6 mx-auto  md:mx-0 py-5 text-white md:h-full">
         <div className="w-full">
           <h2 className="py-2 my-5 text-3xl text-[#FEE715FF]">Contact Me</h2>

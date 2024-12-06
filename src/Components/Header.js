@@ -51,7 +51,7 @@ const Header = () => {
       {headerState?.length === 0 ? (
         <Loader />
       ) : (
-        <section className="bg-gradient-to-r from-[#263b9b] to-[#E0C3FC] md:pb-5 py-12 md:h-full h-screen w-screen">
+        <section className="bg-gradient-to-r from-[#263b9b] to-[#E0C3FC] md:pb-5 py-12 md:h-full h-screen ">
           {/* <section className="bg-gradient-to-r from-[#263b9b] to-[#E0C3FC] md:w-screen md:pb-5 py-12 w-screen md:h-full h-screen"> */}
           <div className="px-2 py-3  flex gap-x-5 w-[85%] mx-auto md:hidden">
             <Link

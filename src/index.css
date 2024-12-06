@@ -20,8 +20,10 @@ body,
 input {
     font-family: 'Sono', sans-serif;
 }
-
-
+/* 
+body {
+    border: 10px solid red;
+} */
 
 
 .border-black-all {

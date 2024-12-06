@@ -9,7 +9,7 @@ import { SiReact } from "react-icons/si";
 const Education = () => {
   return (
     <section
-      className="flex flex-col gap-y-2 md:gap-0 justify-center items-center bg-gradient-to-r from-[#263b9b] to-[#E0C3FC]"
+      className="flex flex-col gap-y-2 md:gap-0 justify-center items-center bg-gradient-to-r from-[#263b9b] to-[#E0C3FC] "
       id="education"
     >
       {/* <section

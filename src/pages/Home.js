@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../Components/Header";
-import Technologies from "../Components/Technologies";
-import Projects from "../Components/Projects";
-import Education from "../Components/Education";
-import Contact from "../Components/Contact";
+const Header = React.lazy(() => import("../Components/Header.js"));
+const Technologies = React.lazy(() => import("../Components/Technologies.js"));
+const Projects = React.lazy(() => import("../Components/Projects.js"));
+const Education = React.lazy(() => import("../Components/Education.js"));
+const Contact = React.lazy(() => import("../Components/Contact.js"));
 
 const Home = () => {
   return (

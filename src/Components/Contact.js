@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
-import { BiPhoneCall, BiInfoCircle } from "react-icons/bi";
+import { useState } from "react";
+
 import { useDispatch } from "react-redux";
 import { createEnquiry } from "../features/enquirySlice";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { IoCallOutline } from "react-icons/io5";
 

@@ -23,7 +23,20 @@ input {
 /* 
 body {
     border: 10px solid red;
-} */
+}  */
+
+.Typewriter {
+    font-size: 1.5rem;
+    color: #f4e79d;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width:720px) {
+    .Typewriter {
+        font-size: 1.4rem;
+    }
+}
 
 
 .border-black-all {

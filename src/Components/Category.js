@@ -1,5 +1,3 @@
-import React from "react";
-
 const Category = ({ category, setCategory, cat }) => {
   return (
     <div

@@ -9,6 +9,9 @@ import { MdCastForEducation } from "react-icons/md";
 import { TiContacts } from "react-icons/ti";
 import { Tooltip, IconButton } from "@mui/material";
 import { Link } from "react-scroll";
+import MainHead from "./MainHead.js";
+import LinksPage from "./LinksPage.js";
+import MainLinkPage from "./MainLinkPage.js";
 const TypeWriterPage = React.lazy(() => import("./TypeWriterPage.js"));
 const HeroImagePage = React.lazy(() => import("./HeroImagePage.js"));
 const ElementsPage = React.lazy(() => import("./ElementsPage.js"));
@@ -17,15 +20,17 @@ const Header = () => {
   const dispatch = useDispatch();
   const headerState = useSelector((state) => state?.header?.headerDetails);
   console.log(headerState);
+
+  const [value, setValue] = useState(false);
+
   useEffect(() => {
     const getDetails = async () => {
       await dispatch(getHeaderDetails());
     };
 
     getDetails();
+    window.addEventListener("scroll", changeValueOnScroll);
   }, []);
-
-  const [value, setValue] = useState(false);
 
   const changeValueOnScroll = () => {
     const scrollValue = document.documentElement.scrollTop;
@@ -36,59 +41,13 @@ const Header = () => {
     }
   };
 
-  window.addEventListener("scroll", changeValueOnScroll);
-
   return (
     <>
       <section className="bg-gradient-to-r from-[#263b9b] to-[#E0C3FC] h-screen md:relative">
         <div className="p-3 w-[90%] mx-auto">
-          <div className="flex gap-x-5  md:hidden mt-5">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="no-underline text-red-300  py-2 px-4 rounded-lg header-tabs-border hover:text-white"
-            >
-              Home
-            </Link>
-            <Link
-              to="technologies"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="no-underline text-red-300  py-2 px-4 rounded-lg header-tabs-border hover:text-white"
-            >
-              Technologies
-            </Link>
-            <Link
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="no-underline text-red-300  py-2 px-4 rounded-lg header-tabs-border hover:text-white"
-            >
-              Projects
-            </Link>
-            <Link
-              to="education"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="no-underline text-red-300  py-2 px-4 rounded-lg header-tabs-border hover:text-white"
-            >
-              Education
-            </Link>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="no-underline text-red-300  py-2 px-4 rounded-lg header-tabs-border hover:text-white"
-            >
-              Contact
-            </Link>
-          </div>
+          <MainLinkPage>
+            <LinksPage />
+          </MainLinkPage>
           <>
             {headerState &&
               headerState?.map((item) => (
@@ -97,19 +56,20 @@ const Header = () => {
                   key={item?._id}
                 >
                   <div
-                    className=" flex flex-col gap-y-11 md:gap-2 justify-center h-[500px] md:h-auto  md:justify-start"
+                    className=" flex flex-col gap-y-11 md:gap-y-10 justify-center h-[500px] md:h-auto  md:justify-start"
                     id="home"
                   >
-                    <h3 className="md:p-3 md:text-xl text-white">
+                    <h3 className="md:text-2xl text-white md:mt-6">
                       👋 Hello, I am
                     </h3>
-                    <h3 className="animate-charcter md:p-3 md:text-2xl">
+
+                    <h3 className="animate-charcter md:text-2xl">
                       {item?.title}
                     </h3>
-
-                    <TypeWriterPage />
-
-                    <ElementsPage />
+                    <MainHead>
+                      <TypeWriterPage />
+                      <ElementsPage />
+                    </MainHead>
                     <div
                       className={
                         value
